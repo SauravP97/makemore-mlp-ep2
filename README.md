@@ -56,11 +56,11 @@ via ---> .
 
 In our dataset we will transform all these 27 characters to their indices with the help of a map.
 
-<img src="/media/makemore-2-1.png" width=300 height=300>
+<img src="/media/makemore-2-1.png" width=300 height=600>
 
 We will use the above mapping to represent characters everywhere in our model. Let's also visualize how our initial character friendly dataset can be mapped to the actual set.
 
-<img src="/media/makemore-2-2.png" width=300 height=300>
+<img src="/media/makemore-2-2.png" width=400 height=600>
 
 We will build a character embedding vector which will have 2 embeddings for each character. Hence our embedding vector will be a `27 x 2` matrix.
 
