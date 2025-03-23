@@ -110,3 +110,21 @@ C[X]
 Our embedded vector will be of dimension `len(X) x 3 x 2` since each character in the training dataset will now have 2 embedding values picked from the embedding map `C`.
 
 ![Embedding Vector](/media/makemore-2-3.png)
+
+Let's flatten out the `len(X) x 3 x 2` matrix into `len(X) x 6` dimension matrix to use it further in our model.
+
+```
+[
+    [0.3229, 0.7459, 0.3229, 0.7459, 0.3229, 0.7459],
+    [0.3229, 0.7459, 0.3229, 0.7459, 0.8790, 0.1160],
+    [0.3229, 0.7459, 0.8790, 0.1160, 0.3731, 0.8226],
+    [0.8790, 0.1160, 0.3731, 0.8226, 0.3731, 0.8226],
+    [0.3731, 0.8226, 0.3731, 0.8226, 0.3204, 0.6386],
+    ...
+]
+```
+
+Our neural network architecture will comprise of `2` layers.
+One hidden layer (with n number of neurons of your choice) and one output layer having `27` neurons to represent the probability distribution of the each character coming up next.
+
+![neural-net](./media/makemore-2-4.png)
